@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="draftsState">
+      <draftsState>
+        <option name="requests">
+          <list>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;Fahad1234&quot;,&#10;  &quot;email&quot;: &quot;Fahad1234@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="f84505af-985e-44cd-ba5a-5910077def55" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:3000/users/64cae284946f5505d7a3034a" />
+            </requestState>
+          </list>
+        </option>
+      </draftsState>
+    </option>
+    <option name="id" value="df608381-ccc0-46d2-8d5e-714b2733f070" />
+  </component>
+</project>
