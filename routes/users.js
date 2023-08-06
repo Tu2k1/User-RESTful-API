@@ -1,8 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const User = require('../models/user')
-
-
+const getUser = require("../middlewares/check_user")
 
 router.get('/',async (req,res)=>{
     try{
@@ -60,22 +59,4 @@ router.delete('/:id',getUser, async (req,res)=>{
     }
 })
 
-
-async function getUser(req,res,next){
-    console.log(req.params.id)
-    let user
-    try{
-        user = await User.findById(req.params.id)
-        if(user == null){
-            return res.status(404).json({message:'user not found'})
-        }
-    }
-    catch (err){
-        res.status(500).json({message:err.message})
-    }
-
-
-    req.user = user
-    next()
-}
 module.exports = router
