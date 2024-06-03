@@ -8,7 +8,7 @@
             <requestState>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;Fahad1234&quot;,&#10;  &quot;email&quot;: &quot;Fahad1234@gmail.com&quot;&#10;}" />
+                  <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Laravel framework&quot;,&#10;  &quot;body&quot;: &quot;Laravel is a PHP full-stack framework&quot;&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
@@ -23,7 +23,7 @@
               <option name="id" value="f84505af-985e-44cd-ba5a-5910077def55" />
               <option name="method" value="GET" />
               <option name="name" value="Draft" />
-              <option name="url" value="http://localhost:3000/users/" />
+              <option name="url" value="http://localhost:3000/users/64d1a0fafaf4366a68e8d2d5" />
             </requestState>
           </list>
         </option>

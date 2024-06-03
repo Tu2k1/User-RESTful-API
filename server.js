@@ -4,16 +4,13 @@ const express = require('express')
 const usersRouter = require('./routes/users')
 const {mongoose} = require('mongoose')
 const app = express()
-const myUri = process.env.MY_URI
+const myUri = process.env.MONGO_URI
 mongoose.connect(myUri,{useNewUrlParser:true, useUnifiedTopology: true})
-const db = mongoose.connection
-db.on('error', (err) => console.log(err))
-db.once('open', () => console.log('connected to database'))
-
+    .then(() => console.log('Connected to database'))
+    .catch((err) => console.log(err.message))
 
 app.use(express.json())
 app.use('/users', usersRouter)
-
 app.get('/', (req, res) => {
     res.json({message:"index path"})
 })
